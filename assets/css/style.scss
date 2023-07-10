@@ -1,0 +1,328 @@
+// base style
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+} 
+
+// coloring and stuff
+$warnaPrimer1: #3e85be;
+$warnaPrimer2: #152f66;
+$shade: #3e84beab;
+$basePutih1: #ffffff;
+$basePutih2: #eceff0;
+$baseDark1: #231c3d;
+$baseDark2: #575a7b;
+
+$baseFont: 1.5rem;
+
+$headingFont1: 4rem;
+$headingFont2: 3.2rem;
+$headingFont3: 2rem;
+$headingFont4: 1.8rem;
+
+$borderRadius1: 1rem;
+$borderRadius2: 0.5rem;
+
+html {
+    font-size: 62.5%;
+}
+
+// utility stuff
+.btn-primary,
+.btn-secondary {
+  padding: 1rem 2rem;
+  border-radius: $borderRadius2;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+.btn-primary {
+  background-color: $warnaPrimer1;
+  color: $basePutih1;
+}
+
+.btn-primary:hover {
+  background-color: $warnaPrimer2;
+}
+
+.btn-secondary {
+  background-color: $basePutih1;
+  border: 0.3rem solid $warnaPrimer1;
+}
+
+.btn-secondary:hover {
+  border: 0.3rem solid $warnaPrimer2;
+  color: $warnaPrimer2;
+}
+
+section,
+footer {
+  padding: 2rem 10rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+h1 {
+  font-size: $headingFont1;
+  margin-bottom: 2rem;
+  word-spacing: 1rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: $headingFont2;
+  color: $baseDark1;
+  font-weight: 700;
+  margin: 2rem 0 5rem 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: $headingFont3;
+  color: $baseDark1;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+h4 {
+  font-size: $headingFont4;
+  color: $baseDark2;
+  margin: 1.5rem 0;
+}
+
+button,
+p,
+input[type="text"] {
+  font-size: $baseFont;
+  color: $baseDark2;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+input[type="text"] {
+  padding: 1rem 2rem;
+  border-radius: $borderRadius2;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+  border: 0.1rem solid $warnaPrimer1;
+}
+
+// navbar
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(0.8rem);
+}
+
+#logo {
+    font-size: $headingFont4;
+    font-weight: 800;
+    padding-left: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: block;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+nav a {
+    color: $baseDark1;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: $headingFont4;
+}
+
+nav li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: $shade;
+  color: $basePutih2
+}
+
+.active {
+   color: $basePutih2;
+   background-color: $warnaPrimer1;
+}
+
+// header
+header {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  align-items: center;
+}
+
+.hero-text p {
+  text-align: justify;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: max-content;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-btns button {
+  margin-top: 2rem;
+}
+
+// section about
+.about .row .column {
+  width: 100%;
+  padding: 0;
+}
+
+.about img {
+  display: block;
+  width: 80%;
+}
+
+.about p {
+  text-align: justify;
+}
+
+// section do
+.do .column {
+  padding: 4rem 2rem;
+  border-radius: $borderRadius1;
+}
+
+.do .column:hover {
+  background-color: $warnaPrimer1;
+}
+
+.do .column:hover p {
+  color: $basePutih1;
+}
+
+.do .img-container {
+  height: 10rem;
+  width: 10rem;
+  background-color: $basePutih1;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.do img {
+  width: 7.8rem;
+  display: block;
+  margin: auto;
+  padding: 1.1rem 0;
+}
+
+.do h3,
+p {
+  text-align: center;
+}
+
+// section more
+.more {
+  background: linear-gradient($basePutih1 60%, $warnaPrimer1 60%);
+}
+
+.more .wrapper {
+  background-color: $basePutih1;
+  padding: 3rem 5rem;
+  border-radius: $borderRadius1;
+  box-shadow: 0 -10px 25px rgba(60, 60, 200, 0.05);
+}
+
+.more .wrapper h3,
+p {
+  text-align: center;
+}
+
+.more form {
+  margin: 1rem 0 1rem 0;
+  display: relative;
+  justify-content: space-between;
+}
+
+.more form input {
+  width: 100%;
+  border: 0.1rem solid $baseDark1;
+}
+
+.more form button {
+  width: 100%;
+}
+
+// footer
+footer {
+  background-color: $warnaPrimer1;
+  text-align: center;
+}
+
+footer .column {
+  width: 100%;
+}
+
+footer .row {
+  padding: 3rem 0;
+}
+
+footer .row:nth-child(1) {
+  border-bottom: 0.2rem solid $basePutih1;
+}
+
+footer .row:nth-child(2) {
+  justify-content: center;
+  gap: 20rem;
+}
+
+footer h3 {
+  color: $baseDark1;
+}
+
+footer p {
+  color: $basePutih2;
+}
+
+footer i{
+  color: $baseDark1;
+    font-size: 3rem;
+}
+
+// copyright
+.copyright {
+  padding: 1rem 0;
+  background-color: $basePutih2;
+  text-align: center;
+}
+
+.copyright p {
+  color: $baseDark1;
+}

@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+.btn-primary {
+  background-color: #3e85be;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #152f66;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  border: 0.3rem solid #3e85be;
+}
+
+.btn-secondary:hover {
+  border: 0.3rem solid #152f66;
+  color: #152f66;
+}
+
+section,
+footer {
+  padding: 2rem 10rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  word-spacing: 1rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 3.2rem;
+  color: #231c3d;
+  font-weight: 700;
+  margin: 2rem 0 5rem 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #231c3d;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: #575a7b;
+  margin: 1.5rem 0;
+}
+
+button,
+p,
+input[type=text] {
+  font-size: 1.5rem;
+  color: #575a7b;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+input[type=text] {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+input[type=text]:focus {
+  border: 0.1rem solid #3e85be;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(0.8rem);
+          backdrop-filter: blur(0.8rem);
+}
+
+#logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding-left: 2em;
+}
+
+nav ul {
+  list-style: none;
+  display: block;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+nav a {
+  color: #231c3d;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  font-size: 1.8rem;
+}
+
+nav li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgba(62, 132, 190, 0.6705882353);
+  color: #eceff0;
+}
+
+.active {
+  color: #eceff0;
+  background-color: #3e85be;
+}
+
+header {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  align-items: center;
+}
+
+.hero-text p {
+  text-align: justify;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-btns button {
+  margin-top: 2rem;
+}
+
+.about .row .column {
+  width: 100%;
+  padding: 0;
+}
+
+.about img {
+  display: block;
+  width: 80%;
+}
+
+.about p {
+  text-align: justify;
+}
+
+.do .column {
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+}
+
+.do .column:hover {
+  background-color: #3e85be;
+}
+
+.do .column:hover p {
+  color: #ffffff;
+}
+
+.do .img-container {
+  height: 10rem;
+  width: 10rem;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.do img {
+  width: 7.8rem;
+  display: block;
+  margin: auto;
+  padding: 1.1rem 0;
+}
+
+.do h3,
+p {
+  text-align: center;
+}
+
+.more {
+  background: linear-gradient(#ffffff 60%, #3e85be 60%);
+}
+
+.more .wrapper {
+  background-color: #ffffff;
+  padding: 3rem 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 -10px 25px rgba(60, 60, 200, 0.05);
+}
+
+.more .wrapper h3,
+p {
+  text-align: center;
+}
+
+.more form {
+  margin: 1rem 0 1rem 0;
+  display: relative;
+  justify-content: space-between;
+}
+
+.more form input {
+  width: 100%;
+  border: 0.1rem solid #231c3d;
+}
+
+.more form button {
+  width: 100%;
+}
+
+footer {
+  background-color: #3e85be;
+  text-align: center;
+}
+
+footer .column {
+  width: 100%;
+}
+
+footer .row {
+  padding: 3rem 0;
+}
+
+footer .row:nth-child(1) {
+  border-bottom: 0.2rem solid #ffffff;
+}
+
+footer .row:nth-child(2) {
+  justify-content: center;
+  gap: 20rem;
+}
+
+footer h3 {
+  color: #231c3d;
+}
+
+footer p {
+  color: #eceff0;
+}
+
+footer i {
+  color: #231c3d;
+  font-size: 3rem;
+}
+
+.copyright {
+  padding: 1rem 0;
+  background-color: #eceff0;
+  text-align: center;
+}
+
+.copyright p {
+  color: #231c3d;
+}/*# sourceMappingURL=style.css.map */
